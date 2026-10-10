@@ -1,0 +1,30 @@
+{
+  "python": "3.12.14",
+  "host": "Windows 11; Intel Core i9-13900H",
+  "timing_scope": "One fresh process per checker, elapsed wall seconds including Python startup; indicative timings, not a benchmark.",
+  "exact": {
+    "wall_seconds": 0.44486070005223155,
+    "result": {
+      "valid": true,
+      "method": "exact rational corners and separating axes",
+      "side": "888096037156625096037155737/100000000000000000000000000",
+      "pair_count": 2415,
+      "minimum_wall_gap": "300550000000050700045000000000027063000000004563/500000000000000000000000000000045000000000000000000000000000",
+      "minimum_pair_gap": "4744371263534011208742514934878602447001440407170048375067745054195553951107/3951757258820198979912276634275059310472013326549929854919278300781250000000000000000000"
+    },
+    "command": "python verify_exact.py certificate.json --check"
+  },
+  "external": {
+    "wall_seconds": 0.07685910002328455,
+    "command": "python check_packing.py external-positive.txt 40",
+    "source": "https://github.com/Davidebyzero/packing_squares_in_squares__tools/blob/79f8a378d52e757d70f7cfb2c2f7a24a53da0204/check_packing.py",
+    "verdict": "VALID",
+    "epsilon": "1E-40"
+  },
+  "sha256": {
+    "certificate.json": "eeebf55cf3c1614a96f51339695f28443e35f33b0195bfc24ef0549b50550cb1",
+    "external-positive.log": "0c80020cb4bcdb8f339acaceb2cedcea3d9bdd2a65ab5b28034de2e1b4b30f85",
+    "external-positive.txt": "afc9376fae3baa1dfb43d037dce7eb88a0c85369622af1fb4974a56b2f829b87",
+    "verify_exact.py": "8a7373a53119fd751ea38c5d65955d5260d8e4b4e3d70c4ce8a170feccdeb5fe"
+  }
+}
